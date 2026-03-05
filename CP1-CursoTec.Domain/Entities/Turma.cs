@@ -5,6 +5,7 @@ namespace CP1_CursoTec.Domain.Entities;
 public class Turma : BaseEntity
 {
     public Guid Id { get; private set; }
+    
     public string Nome_turma { get; private set; }
     public DateTime DataInicio { get; private set; }
     public DateTime? DataFim { get; private set; }
@@ -24,5 +25,30 @@ public class Turma : BaseEntity
         ProfessorId = professorId;
         Curso = curso;
         Professor = professor;
+    }
+    
+    public Turma(string nomeTurma, DateTime dataInicio, DateTime dataFim)
+    {
+        UpdateNome(nomeTurma);
+        UpdateDataInicio(dataInicio);
+        UpdateDataFim(dataFim);
+    }
+    
+    public void UpdateNome(string newName)
+    {
+        if (string.IsNullOrWhiteSpace(newName))
+            throw new Exception("Nome não pode ser vazio.");
+        
+        Nome_turma = newName;
+    }
+
+    public void UpdateDataInicio(DateTime newData)
+    {
+        DataInicio = newData;
+    }
+
+    public void UpdateDataFim(DateTime newData)
+    {
+        DataFim = newData;
     }
 }
