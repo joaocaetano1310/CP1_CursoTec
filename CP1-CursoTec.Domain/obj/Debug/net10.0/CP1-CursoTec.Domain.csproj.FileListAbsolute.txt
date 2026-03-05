@@ -1,0 +1,4 @@
+C:\Users\joaov\OneDrive\Desktop\Faculdade\C#\CP1-CursoTec\CP1-CursoTec.Domain\obj\Debug\net10.0\CP1-CursoTec.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaov\OneDrive\Desktop\Faculdade\C#\CP1-CursoTec\CP1-CursoTec.Domain\obj\Debug\net10.0\CP1-CursoTec.Domain.AssemblyInfoInputs.cache
+C:\Users\joaov\OneDrive\Desktop\Faculdade\C#\CP1-CursoTec\CP1-CursoTec.Domain\obj\Debug\net10.0\CP1-CursoTec.Domain.AssemblyInfo.cs
+C:\Users\joaov\OneDrive\Desktop\Faculdade\C#\CP1-CursoTec\CP1-CursoTec.Domain\obj\Debug\net10.0\CP1-CursoTec.Domain.csproj.CoreCompileInputs.cache

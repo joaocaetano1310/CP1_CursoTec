@@ -1,0 +1,6 @@
+@CP1_CursoTec_HostAddress = http://localhost:5104
+
+GET {{CP1_CursoTec_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

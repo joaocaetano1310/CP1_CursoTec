@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LBYHC9Vm2Uc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\joaov\\OneDrive\\Desktop\\Faculdade\\C#\\CP1-CursoTec\\CP1-CursoTec.API\\CP1-CursoTec.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joaov\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\joaov\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

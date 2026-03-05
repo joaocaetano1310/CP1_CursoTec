@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP1-CursoTec.API", "CP1-CursoTec.API\CP1-CursoTec.API.csproj", "{862BF693-5634-486E-A81A-F99D6AD2A2AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP1-CursoTec.Application", "CP1-CursoTec.Application\CP1-CursoTec.Application.csproj", "{087FD3F9-25D2-4865-9C4D-F560274537DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP1-CursoTec.Domain", "CP1-CursoTec.Domain\CP1-CursoTec.Domain.csproj", "{6CE18664-58C1-449A-934B-BA6F174CA7C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{862BF693-5634-486E-A81A-F99D6AD2A2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862BF693-5634-486E-A81A-F99D6AD2A2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862BF693-5634-486E-A81A-F99D6AD2A2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862BF693-5634-486E-A81A-F99D6AD2A2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{087FD3F9-25D2-4865-9C4D-F560274537DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{087FD3F9-25D2-4865-9C4D-F560274537DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{087FD3F9-25D2-4865-9C4D-F560274537DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{087FD3F9-25D2-4865-9C4D-F560274537DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE18664-58C1-449A-934B-BA6F174CA7C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE18664-58C1-449A-934B-BA6F174CA7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE18664-58C1-449A-934B-BA6F174CA7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE18664-58C1-449A-934B-BA6F174CA7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
