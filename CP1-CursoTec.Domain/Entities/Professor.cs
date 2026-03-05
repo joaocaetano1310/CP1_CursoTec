@@ -18,4 +18,34 @@ public class Professor : BaseEntity
         Especialidade = especialidade;
         Turma = turma;
     }
+    public Professor(string name, string email, string especialidade)
+    {
+        UpdateNome(name);
+        UpdateEmail(email);
+        UpdateEspecialidade(especialidade);
+    }
+    
+    public void UpdateNome(string newName)
+    {
+        if (string.IsNullOrWhiteSpace(newName))
+            throw new Exception("Nome não pode ser vazio.");
+        
+        Nome = newName;
+    }
+
+    public void UpdateEmail(string newEmail)
+    {
+        if (string.IsNullOrWhiteSpace(newEmail) || !newEmail.Contains("@"))
+            throw new Exception("E-mail inválido.");
+            
+        Email = newEmail;
+    }
+
+    public void UpdateEspecialidade(string newEspecialidade)
+    {
+        if (string.IsNullOrWhiteSpace(newEspecialidade))
+            throw new Exception("Especialidade requerida.");
+        
+        Especialidade = newEspecialidade;
+    } 
 }
