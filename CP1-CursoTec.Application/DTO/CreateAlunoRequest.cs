@@ -2,10 +2,10 @@ using CP1_CursoTec.Domain.Entities;
 
 namespace CP1_CursoTec.Application.DTO;
 
-public record CreateAlunoRequest(string Nome, string Email, string Cpf, DateOnly DataNascimento)
+public class CreateAlunoRequest(string nome, string email, string cpf, DateOnly datanascimento, Turma Turma)
 {
     public Aluno ToDomain()
     {
-        return new Aluno(Nome, Email, Cpf, DataNascimento);
+        return new Aluno(nome, email, cpf, datanascimento, Turma);
     } 
 }

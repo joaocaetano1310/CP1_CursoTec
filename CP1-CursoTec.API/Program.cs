@@ -1,4 +1,5 @@
 using CP1_CursoTec.Application.DTO;
+using CP1_CursoTec.Domain.Entities;
 
 namespace CP1_CursoTec;
 
@@ -6,11 +7,11 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var alunoRequest = new CreateAlunoRequest("Raul", "", "", new DateOnly(2005, 09, 19));
+        var alunoRequest = new CreateAlunoRequest("Raul", "", "", new DateOnly(2005, 09, 19), null);
 
         alunoRequest.ToDomain();
 
-        var professorRequest = new CreateProfessorRequest("Thiago", "",  "");
+        var professorRequest = new CreateProfessorRequest("Thiago", "", "", null);
         
         professorRequest.ToDomain();
         
