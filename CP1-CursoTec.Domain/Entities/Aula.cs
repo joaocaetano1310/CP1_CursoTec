@@ -7,11 +7,11 @@ public class Aula : BaseEntity
     public Guid Id { get; private set; }
     public Guid TurmaId { get; private set; }
     public DateTime Data { get; private set; }
-    public TimeSpan HoraInicio { get; private set; }
-    public TimeSpan HoraFim { get; private set; }
+    public TimeOnly HoraInicio{ get; private set; }
+    public TimeOnly HoraFim { get; private set; }
     public Turma? Turma { get; private set; }
 
-    public Aula(Guid id, Guid turmaId, DateTime data, TimeSpan horaInicio, TimeSpan horaFim, Turma? turma)
+    public Aula(Guid id, Guid turmaId, DateTime data, TimeOnly horaInicio, TimeOnly horaFim, Turma? turma)
     {
         Id = id;
         TurmaId = turmaId;
@@ -20,5 +20,26 @@ public class Aula : BaseEntity
         HoraFim = horaFim;
         Turma = turma;
     }
+
+    public Aula(DateTime data, TimeOnly horaInicio, TimeOnly horaFim)
+    {
+        UpdateData(data);
+        UpdateInicio(horaInicio);
+        UpdateFim(horaFim);
+    }
+
+    public void UpdateFim(TimeOnly horaFim)
+    {
+        HoraFim = horaFim;
+    }
     
+    public void UpdateInicio(TimeOnly horaInicio)
+    {
+        HoraInicio = horaInicio;
+    }
+
+    public void UpdateData(DateTime newData)
+    {
+        Data = newData;
+    }
 }
