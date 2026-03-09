@@ -38,8 +38,6 @@ As seguintes entidades foram definidas no modelo:
 - **Curso**
 - **Turma**
 - **Sala**
-- **Matricula**
-- **Avaliacao**
 
 Cada entidade possui atributos próprios e uma **chave primária (PK)** responsável por identificar cada registro de forma única.
 
@@ -61,9 +59,6 @@ Os principais relacionamentos entre as entidades são:
 - **Aluno N:N Turma**  
   Um aluno pode participar de várias turmas e uma turma pode ter vários alunos.  
   Esse relacionamento é realizado através da entidade **Matricula**.
-
-- **Matricula 1:N Avaliacao**  
-  Uma matrícula pode possuir várias avaliações associadas.
 
 ---
 
