@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sr0vvcm4Q6E=",
+  "dgSpecHash": "qWjzYwXbfhE=",
   "success": true,
-  "projectFilePath": "C:\\CP1-CursoTec\\CP1-CursoTec.Infrastructure\\CP1-CursoTec.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\joaov\\OneDrive\\Desktop\\CP1-CursoTec\\CP1-CursoTec.Infrastructure\\CP1-CursoTec.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joaov\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.6\\microsoft.data.sqlite.core.10.0.6.nupkg.sha512",
     "C:\\Users\\joaov\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.6\\microsoft.entityframeworkcore.10.0.6.nupkg.sha512",

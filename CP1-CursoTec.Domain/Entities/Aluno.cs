@@ -5,14 +5,12 @@ namespace CP1_CursoTec.Domain.Entities;
 public class Aluno : BaseEntity
 {
     public Guid AlunoId { get; private set; }
-    public string Nome { get; private set; }
-    public string Email { get; private set; }
-    public string Cpf { get; private set; }
+    public string Nome { get; private set; } = string.Empty;
+    public string Email { get; private set; } = string.Empty;
+    public string Cpf { get; private set; } = string.Empty;
     public DateOnly DataNascimento { get; private set; }
-    
     public Turma? Turma { get; private set; }
     
-    // CONSTRUTOR EXCLUSIVO PARA O ENTITY FRAMEWORK
     protected Aluno() { }
 
     public Aluno(string nome, string email, string cpf, DateOnly datanascimento, Turma? turma)

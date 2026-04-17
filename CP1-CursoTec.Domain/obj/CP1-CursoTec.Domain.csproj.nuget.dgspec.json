@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CP1-CursoTec\\CP1-CursoTec.Domain\\CP1-CursoTec.Domain.csproj": {}
+    "C:\\Users\\joaov\\OneDrive\\Desktop\\CP1-CursoTec\\CP1-CursoTec.Domain\\CP1-CursoTec.Domain.csproj": {}
   },
   "projects": {
-    "C:\\CP1-CursoTec\\CP1-CursoTec.Domain\\CP1-CursoTec.Domain.csproj": {
+    "C:\\Users\\joaov\\OneDrive\\Desktop\\CP1-CursoTec\\CP1-CursoTec.Domain\\CP1-CursoTec.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CP1-CursoTec\\CP1-CursoTec.Domain\\CP1-CursoTec.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\joaov\\OneDrive\\Desktop\\CP1-CursoTec\\CP1-CursoTec.Domain\\CP1-CursoTec.Domain.csproj",
         "projectName": "CP1-CursoTec.Domain",
-        "projectPath": "C:\\CP1-CursoTec\\CP1-CursoTec.Domain\\CP1-CursoTec.Domain.csproj",
+        "projectPath": "C:\\Users\\joaov\\OneDrive\\Desktop\\CP1-CursoTec\\CP1-CursoTec.Domain\\CP1-CursoTec.Domain.csproj",
         "packagesPath": "C:\\Users\\joaov\\.nuget\\packages\\",
-        "outputPath": "C:\\CP1-CursoTec\\CP1-CursoTec.Domain\\obj\\",
+        "outputPath": "C:\\Users\\joaov\\OneDrive\\Desktop\\CP1-CursoTec\\CP1-CursoTec.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joaov\\AppData\\Roaming\\NuGet\\NuGet.Config"
