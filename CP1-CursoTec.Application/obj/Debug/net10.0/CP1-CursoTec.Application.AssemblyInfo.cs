@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CP1-CursoTec.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+059a1741f0ba8c63fc5e96e979b9ec0e6d8a9d34")]
 [assembly: System.Reflection.AssemblyProductAttribute("CP1-CursoTec.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CP1-CursoTec.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
