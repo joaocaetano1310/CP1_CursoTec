@@ -10,8 +10,11 @@ public class Professor : BaseEntity
     public string? Especialidade { get; private set; }
     
     public Turma? Turma { get; private set; }
+    
+    protected Professor() { }
 
     public Professor(string nome, string email, string? especialidade, Turma turma)
+        // ...
     {
         Nome = nome;
         Email = email;

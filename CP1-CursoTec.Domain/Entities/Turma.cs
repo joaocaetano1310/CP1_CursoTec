@@ -16,6 +16,9 @@ public class Turma : BaseEntity
     public ICollection<Aula> Aulas { get; private set; } = new List<Aula>();
     public ICollection<Aluno> Alunos { get; private set; } = new List<Aluno>();
     
+    // Para o EF Core
+    protected Turma() { }
+
     public Turma(Guid id, string NomeTurma, DateTime dataInicio, DateTime? dataFim, Guid professorId, Curso? curso, Professor? professor)
     {
         Id = id;

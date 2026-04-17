@@ -1,12 +1,18 @@
+using CP1_CursoTec.Domain.Commom;
+
 namespace CP1_CursoTec.Domain.Entities;
 
-public class Curso
+// 1. Adicionar a herança : BaseEntity
+public class Curso : BaseEntity
 {
     public string Nome { get; private set; }
     public int CargaHoraria { get; private set; }
     public string? Descricao { get; private set; }
     
     public ICollection<Turma> Turmas { get; set; } = new List<Turma>();
+
+    // 2. Construtor vazio protegido para o Entity Framework
+    protected Curso() { }
 
     public Curso(string nome, int cargaHoraria, string? descricao)
     {
@@ -15,7 +21,7 @@ public class Curso
         Descricao = descricao;
     }
     
-    public  Curso(string nome, string descricao)
+    public Curso(string nome, string descricao)
     {
         UpdateNome(nome);
         UpdateDescricao(descricao);

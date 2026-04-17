@@ -1,5 +1,5 @@
-using CP1_CursoTec.Application.DTO;
-using CP1_CursoTec.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using CP1_CursoTec.Infrastructure.Data;
 
 namespace CP1_CursoTec;
 
@@ -7,21 +7,14 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var alunoRequest = new CreateAlunoRequest("Raul", "", "", new DateOnly(2005, 09, 19), null);
-
-        alunoRequest.ToDomain();
-
-        var professorRequest = new CreateProfessorRequest("Thiago", "", "", null);
-        
-        professorRequest.ToDomain();
-        
-        
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
+        // 1. Configuração do Banco de Dados
+        builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+        // Add services to the container.
         builder.Services.AddControllers();
-        // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         builder.Services.AddOpenApi();
 
         var app = builder.Build();
@@ -33,9 +26,7 @@ public class Program
         }
 
         app.UseHttpsRedirection();
-
         app.UseAuthorization();
-
         app.MapControllers();
 
         app.Run();

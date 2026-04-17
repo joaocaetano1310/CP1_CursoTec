@@ -12,6 +12,9 @@ public class Aluno : BaseEntity
     
     public Turma? Turma { get; private set; }
     
+    // CONSTRUTOR EXCLUSIVO PARA O ENTITY FRAMEWORK
+    protected Aluno() { }
+
     public Aluno(string nome, string email, string cpf, DateOnly datanascimento, Turma? turma)
     {
         Nome = nome;
