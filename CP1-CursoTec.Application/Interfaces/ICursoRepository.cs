@@ -2,20 +2,11 @@ using CP1_CursoTec.Domain.Entities;
 
 namespace CP1_CursoTec.Application.Interfaces;
 
-/// <summary>
-/// Interface do serviço de cursos.
-/// </summary>
-public interface ICursoService
+public interface ICursoRepository
 {
-    Curso CreateCurso(Curso curso);
-
-    Curso? GetById(Guid id);
-
-    IReadOnlyList<Curso> GetAll();
-
-    Curso UpdateCurso(Guid id, string? nome, int? cargaHoraria, string? descricao);
-
-    bool DeactivateCurso(Guid id);
-
-    bool ActivateCurso(Guid id);
+    Task<Curso?> GetByIdAsync(Guid id);
+    Task<IEnumerable<Curso>> GetAllAsync();
+    Task AddAsync(Curso curso);
+    void Update(Curso curso);
+    void Remove(Curso curso);
 }

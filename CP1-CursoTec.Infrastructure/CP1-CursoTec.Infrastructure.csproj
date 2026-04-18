@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Compile Remove="Repositories\**" />
+    <Compile Remove="Repositoryes\AlunoRepository.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +22,10 @@
 
   <ItemGroup>
     <None Remove="Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositoryes\" />
   </ItemGroup>
 
   <PropertyGroup>
