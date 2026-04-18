@@ -7,6 +7,6 @@ public interface ICursoRepository
     Task<Curso?> GetByIdAsync(Guid id);
     Task<IEnumerable<Curso>> GetAllAsync();
     Task AddAsync(Curso curso);
-    void Update(Curso curso);
+    Task UpdateAsync(Curso curso);
     void Remove(Curso curso);
 }

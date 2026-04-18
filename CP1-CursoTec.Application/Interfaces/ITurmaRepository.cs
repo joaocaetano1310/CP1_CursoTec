@@ -7,6 +7,6 @@ public interface ITurmaRepository
     Task<Turma?> GetByIdAsync(Guid id);
     Task<IEnumerable<Turma>> GetAllAsync();
     Task AddAsync(Turma turma);
-    void Update(Turma turma);
+    Task UpdateAsync(Turma turma);
     void Remove(Turma turma);
 }

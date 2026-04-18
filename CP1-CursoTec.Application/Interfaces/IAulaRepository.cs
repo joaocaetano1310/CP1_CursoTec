@@ -7,6 +7,6 @@ public interface IAulaRepository
     Task<Aula?> GetByIdAsync(Guid id);
     Task<IEnumerable<Aula>> GetAllAsync();
     Task AddAsync(Aula aula);
-    void Update(Aula aula);
+    Task UpdateAsync(Aula aula);
     void Remove(Aula aula);
 }

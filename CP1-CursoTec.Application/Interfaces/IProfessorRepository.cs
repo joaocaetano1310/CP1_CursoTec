@@ -7,6 +7,6 @@ public interface IProfessorRepository
     Task<Professor?> GetByIdAsync(Guid id);
     Task<IEnumerable<Professor>> GetAllAsync();
     Task AddAsync(Professor professor);
-    void Update(Professor professor);
+    Task UpdateAsync(Professor professor);
     void Remove(Professor professor);
 }

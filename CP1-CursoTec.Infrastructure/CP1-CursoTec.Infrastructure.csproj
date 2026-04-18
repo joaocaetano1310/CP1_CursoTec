@@ -24,10 +24,6 @@
     <None Remove="Repositories\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositoryes\" />
-  </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>CP1_CursoTec.Infrastructure</RootNamespace>
