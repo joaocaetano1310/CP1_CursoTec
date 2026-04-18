@@ -33,7 +33,7 @@ public class AlunoConfiguration : IEntityTypeConfiguration<Aluno>
         builder.Property(a => a.DataNascimento)
             .IsRequired();
 
-        // Relacionamento: Aluno -> Turma (opcional)
+        
         builder.HasOne(a => a.Turma)
             .WithMany(t => t.Alunos)
             .HasForeignKey("TurmaId")

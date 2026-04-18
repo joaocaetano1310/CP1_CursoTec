@@ -25,8 +25,7 @@ public class ProfessorConfiguration : IEntityTypeConfiguration<Professor>
 
         builder.Property(p => p.Especialidade)
             .HasMaxLength(150);
-
-        // Relacionamento: Professor -> Turma (1:1)
+        
         builder.HasOne(p => p.Turma)
             .WithOne(t => t.Professor)
             .HasForeignKey<Turma>(t => t.ProfessorId)

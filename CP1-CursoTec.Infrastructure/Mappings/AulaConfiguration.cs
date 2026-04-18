@@ -20,8 +20,7 @@ public class AulaConfiguration : IEntityTypeConfiguration<Aula>
 
         builder.Property(a => a.HoraFim)
             .IsRequired();
-
-        // Relacionamento: Aula -> Turma (obrigatório)
+        
         builder.HasOne(a => a.Turma)
             .WithMany(t => t.Aulas)
             .HasForeignKey(a => a.TurmaId)
